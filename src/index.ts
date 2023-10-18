@@ -29,6 +29,8 @@ app.get("/ping", async (req: Request, res: Response) => {
     }
 })
 
+// GET ALL bands
+
 app.get("/bands", async (req: Request, res: Response) => {
     try {
         const result = await db.raw(`
@@ -50,6 +52,8 @@ app.get("/bands", async (req: Request, res: Response) => {
         }
     }
 })
+
+// POST new band
 
 app.post("/bands", async (req: Request, res: Response) => {
     try {
@@ -91,6 +95,8 @@ app.post("/bands", async (req: Request, res: Response) => {
         }
     }
 })
+
+// UPDATE a band by id
 
 app.put("/bands/:id", async (req: Request, res: Response) => {
     try {
