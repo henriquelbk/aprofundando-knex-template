@@ -1,4 +1,4 @@
--- Active: 1697146376462@@127.0.0.1@3306
+-- Active: 1697672689855@@127.0.0.1@3306
 -- Tabelas já foram criadas
 CREATE TABLE bands (
     id TEXT PRIMARY KEY UNIQUE NOT NULL,
@@ -30,6 +30,9 @@ VALUES
     ('s004', 'All the small things', 'b003'),
     ('s005', 'I miss you', 'b003');
 
+SELECT * FROM songs;
 SELECT * FROM bands;
 
-SELECT * FROM songs;
+DROP TABLE bands;
+DROP TABLE songs;
+

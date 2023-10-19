@@ -1,2 +1,43 @@
 GET http://localhost:3003/bands
 ###
+
+GET http://localhost:3003/songs
+###
+
+POST http://localhost:3003/bands
+Content-Type: application/json
+
+{
+    "id": "b004",
+    "name": "Iron Maiden"
+}
+###
+
+PUT http://localhost:3003/bands/b002
+Content-Type: application/json
+
+{
+    "name": "Cleiton Rasta"
+}
+###
+
+DELETE http://localhost:3003/bands/b001
+###
+
+POST http://localhost:3003/songs
+Content-Type: application/json
+
+{
+    "id": "s006",
+    "name": "Debocha legal",
+    "band_id": "b002"
+}
+###
+
+PUT http://localhost:3003/songs/s004
+Content-Type: application/json
+
+{
+    "name": "a outra"
+}
+###
