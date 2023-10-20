@@ -194,6 +194,8 @@ app.put("/bands/:id", async (req: Request, res: Response) => {
     }
 })
 
+// DELETE a band by id
+
 app.delete("/bands/:id", async (req: Request, res: Response) => {
     try{
 
